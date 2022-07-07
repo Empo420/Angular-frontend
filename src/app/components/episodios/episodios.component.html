@@ -1,0 +1,10 @@
+<h1>Episodios</h1>
+<div class="container">
+    <div class="row justify-content" *ngFor="let episodio of episodios; index as i">
+        <p>{{episodio.name}}</p>
+        <p>{{episodio.air_date}}</p>
+        <p>{{episodio.episode}}</p>
+        <p>{{episodio.url}}</p>
+        <video src="{{episodio.url}}">videos</video>
+    </div>
+</div>

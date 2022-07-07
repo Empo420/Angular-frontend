@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="row justify-content">
+        <div class="col sm-6 mt-3  p-2 mb-2" *ngFor="let personaje of personajes; index as i">
+            <div class="card p-1" style="width: 19rem;">
+                <h3 class="text-center">{{personaje.name}}</h3>
+                <img src="{{personaje.image}}" class="card-img-top" alt="imagen_personajes">
+                <div class="card-body">
+                    <p class="card-text">species: {{personaje.species}}</p>
+                    <p class="card-text">status: {{personaje.status}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
